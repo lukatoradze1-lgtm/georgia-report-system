@@ -83,6 +83,53 @@ header {
   opacity: 0.85;
 }
 
+.seo-content {
+  margin-top: 20px;
+}
+
+.seo-content h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--app-fg);
+  margin: 22px 0 10px;
+}
+
+.seo-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--brand-500);
+  margin: 0 0 10px;
+}
+
+.seo-content .seo-list {
+  margin: 0 0 6px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--brand-500);
+}
+
+.seo-content strong {
+  color: var(--app-fg);
+  font-weight: 500;
+}
+
+.faq-item {
+  border-top: 1px solid var(--brand-100);
+  padding: 12px 0;
+}
+
+.faq-item h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--app-fg);
+  margin: 0 0 4px;
+}
+
+.faq-item p {
+  margin: 0;
+}
+
 h1 {
   font-size: 22px;
   font-weight: 500;
