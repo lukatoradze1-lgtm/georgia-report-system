@@ -3,19 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="index,follow">
+  <meta name="google-site-verification" content="r3ziwDqCqyiUJvP44APv-78egD833sAQMgRuVjyTnz0" />
   <title>პრობლემის ანონიმური გაგზავნა</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class="container">
-    <header>
-      <h1>პრობლემის ანონიმური გაგზავნა</h1>
+    <header data-site-header>
+      <div class="site-logo" data-brand="logo">📨</div>
+      <h1 data-content="home.title" data-brand="siteName">პრობლემის ანონიმური გაგზავნა</h1>
+      <div class="site-tagline hidden" data-brand="tagline"></div>
+      <div class="lang-switcher hidden" data-lang-switcher></div>
     </header>
 
     <form id="submission-form" novalidate>
       <div class="field">
-        <label for="problem">თქვენი პრობლემა <span class="required">*</span></label>
+        <label for="problem"><span data-content="home.problemLabel">თქვენი პრობლემა</span> <span class="required">*</span></label>
         <div class="textarea-wrapper">
           <textarea
             id="problem"
@@ -23,6 +27,7 @@
             rows="6"
             maxlength="5000"
             placeholder="აღწერეთ რა ხდება..."
+            data-content="home.problemPlaceholder"
             required
           ></textarea>
           <div class="textarea-toolbar">
@@ -43,13 +48,13 @@
         </div>
         <input type="file" id="image" name="image" accept="image/*" style="display:none">
         <input type="file" id="camera" name="camera" accept="image/*" capture="environment" style="display:none">
-        <small class="hint">მაქს. 5000 სიმბოლო. გთხოვთ იყავით თავაზიანი.</small>
+        <small class="hint" data-content="home.problemHint">მაქს. 5000 სიმბოლო. გთხოვთ იყავით თავაზიანი.</small>
         <span class="error-message" id="problem-error" role="alert" aria-live="polite"></span>
         <span class="error-message" id="image-error" role="alert" aria-live="polite"></span>
       </div>
 
       <div class="field">
-        <label for="city">უბანი <span class="required">*</span></label>
+        <label for="city"><span data-content="home.cityLabel">უბანი</span> <span class="required">*</span></label>
         <select id="city" name="city" required>
           <option value="">-- აირჩიეთ უბანი --</option>
         </select>
@@ -59,23 +64,28 @@
       <div class="checkbox-field">
         <label class="checkbox-label" for="consent">
           <input type="checkbox" id="consent" name="consent" required>
-          <span id="consent-text"></span>
+          <span id="consent-text" data-content="home.consent"></span>
         </label>
         <span class="error-message" id="consent-error" role="alert" aria-live="polite"></span>
       </div>
 
-      <button type="submit" id="submit-btn">ანონიმურად გაგზავნა</button>
+      <button type="submit" id="submit-btn" data-content="home.submit">ანონიმურად გაგზავნა</button>
       <span class="error-message" id="form-error" role="alert" aria-live="polite"></span>
     </form>
 
     <div id="thank-you" class="thank-you hidden">
-      <h2>გმადლობთ გაგზავნისთვის!</h2>
-      <p>თქვენი შეტყობინება მიღებულია ანონიმურად. მადლობას გიხდით მხარდაჭერისთვის.</p>
-      <button type="button" id="submit-another">კიდევ ერთის გაგზავნა</button>
+      <h2 data-content="home.thanksTitle">გმადლობთ გაგზავნისთვის!</h2>
+      <p data-content="home.thanksBody">თქვენი შეტყობინება მიღებულია ანონიმურად. მადლობას გიხდით მხარდაჭერისთვის.</p>
+      <button type="button" id="submit-another" data-content="home.submitAnother">კიდევ ერთის გაგზავნა</button>
     </div>
   </div>
 
+  <footer class="site-footer" data-site-footer>
+    <span data-content="footer.text"></span>
+  </footer>
+
   <script src="/js/i18n.js"></script>
+  <script src="/js/site.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
